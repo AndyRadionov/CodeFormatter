@@ -1,14 +1,14 @@
 package com.company.formatter;
 
 /**
- * Test String data
+ * Test Strings for Formatter format() method tests
  */
 public class TestData {
-    protected static final String INPUT_STRING = "while(true){System.out.println(\"Hello\");if(a<b)a=b;}";
-    protected static final String OUTPUT_STRING =
-            "while (true) {\n" +
-                    "    System.out.println (\"Hello\") ;\n" +
-                    "    if (a < b) a = b;\n" +
+    public static final String INPUT_STRING1 = "for(int i=0;i<5;i++){\n\n\nhello();}";
+    public static final String OUTPUT_STRING1 =
+            "for (int i = 0; i < 5; i ++ ) {\n" +
+                    "    hello ();\n" +
                     "}";
-
+    public static final String INPUT_STRING2 = "String string = \"abc;{}literal\";";
+    public static final String OUTPUT_STRING2 = INPUT_STRING2;
 }

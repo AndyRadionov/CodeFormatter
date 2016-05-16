@@ -1,4 +1,4 @@
 /**
- * Contains classes for code formatting
+ * Contains classes for code formatting.
  */
 package com.company.formatter;

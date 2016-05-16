@@ -1,13 +1,11 @@
 package com.company.writer;
 
 /**
- * Interface for writing given char symbols or String to output resource
- *
- * @author Andrey Radionov andyomsk@gmail.com
+ * Interface for writing given char symbols or String to output resource.
  */
 public interface IWriter {
     /**
-     * Writes given String to output resource
+     * Writes given String to output resource.
      *
      * @param string String to write to output resource
      * @throws WriterException if String cannot be written
@@ -15,7 +13,7 @@ public interface IWriter {
     void write(String string) throws WriterException;
 
     /**
-     * Writes given char symbol to output resource
+     * Writes given char symbol to output resource.
      *
      * @param c char to write to output resource
      * @throws WriterException if char symbol cannot be written

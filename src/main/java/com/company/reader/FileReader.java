@@ -4,17 +4,18 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 /**
- * Class for reading char symbols from file
+ * Class for reading char symbols from file.
  */
 public class FileReader implements IReader, Closeable {
     private java.io.FileReader fileReader;
 
     /**
-     * Constructs FileReader from given file name
+     * Constructs FileReader from given file name.
      *
      * @param fileName name of file to read
+     * @throws ReaderException when reading exception occurs
      */
-    public FileReader(String fileName) throws ReaderException {
+    public FileReader(final String fileName) throws ReaderException {
         try {
             fileReader = new java.io.FileReader(fileName);
         } catch (FileNotFoundException e) {
@@ -23,7 +24,7 @@ public class FileReader implements IReader, Closeable {
     }
 
     /**
-     * Reads next char symbol from file
+     * Reads next char symbol from file.
      *
      * @return next char symbol read from file
      * @throws ReaderException if next char symbol cannot be read
@@ -38,7 +39,7 @@ public class FileReader implements IReader, Closeable {
     }
 
     /**
-     * Checks if resource file has next char symbol to read
+     * Checks if resource file has next char symbol to read.
      *
      * @return true if resource file has next char symbol to read
      * @throws ReaderException if next char symbol cannot be read
@@ -53,7 +54,7 @@ public class FileReader implements IReader, Closeable {
     }
 
     /**
-     * Closes resource file
+     * Closes resource file.
      *
      * @throws ReaderException if this resource file cannot be closed
      */

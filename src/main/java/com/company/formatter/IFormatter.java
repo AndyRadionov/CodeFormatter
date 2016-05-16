@@ -4,12 +4,12 @@ import com.company.reader.IReader;
 import com.company.writer.IWriter;
 
 /**
- * Interface for formatting symbols from reader and writing them to writer
+ * Interface for formatting symbols fetched from reader and writing them to writer.
  */
 public interface IFormatter {
 
     /**
-     * Formats symbols from reader and writing its to write
+     * Formats symbols from reader and writing its to write.
      *
      * @param reader Reader to read symbols from
      * @param writer Writer to write symbols to
