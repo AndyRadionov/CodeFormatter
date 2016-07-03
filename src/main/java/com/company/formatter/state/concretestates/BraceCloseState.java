@@ -24,6 +24,9 @@ public class BraceCloseState implements IState {
     public void writeFormattedSymbol(final char symbol, final IWriter writer, final IContext context,
                                      final IStateMachine stateMachine) throws StateException {
         try {
+            if (symbol == '}') {
+                context.decreaseOffset();
+            }
             if (symbol != '\n') {
                 writer.write('\n');
                 writer.write(context.getOffset());
